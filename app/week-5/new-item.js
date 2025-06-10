@@ -9,6 +9,7 @@ export default function NewItemForm() {
   const [category, setCategory] = useState("Produce");
   const [touched, setTouched] = useState(false);
   const isInvalid = touched && name.trim() === "";
+
   // Event handlers
   function handleSubmit(e) {
     // Prevent default form submission
@@ -50,11 +51,12 @@ export default function NewItemForm() {
           placeholder="Enter Product Name..."
           onChange={setNameINput}
           onBlurCapture={() => setTouched(true)}
-          required
           className={`w-90 p-1.5 border-b-2 border-gray-300 outline-none ${
             isInvalid ? `invalid:border-red-500` : `focus:border-blue-500`
           } `}
+          id="name-input"
         />
+        {isInvalid && <p className="text-red-500 text-sm mt-1">Please enter a valid product name.</p>}
         <div className="flex items-center justify-between mt-3">
           <input
             type="number"
