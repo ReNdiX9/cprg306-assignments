@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 export default function Home() {
-  let styleLink = "text-blue-500 underline hover:italic hover:no-underline block";
+  let styleLink =
+    "text-blue-500 block w-25  border-b-2 border-transparent hover:border-blue-500 transition-all duration-500";
 
   return (
     <main>
@@ -17,6 +18,9 @@ export default function Home() {
       </Link>
       <Link href="/week-5" className={styleLink}>
         Go to week-5
+      </Link>
+      <Link href="/week-6" className={styleLink}>
+        Go to week-6
       </Link>
     </main>
   );

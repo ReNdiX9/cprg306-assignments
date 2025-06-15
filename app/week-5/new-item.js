@@ -63,12 +63,12 @@ export default function NewItemForm() {
             value={quantity}
             placeholder="write a quantity..."
             onChange={setQuantityInput}
-            className="outline-none border-b-2 border-gray-300 focus:border-blue-500 p-1.5 w-40"
+            className="outline-none border-b-2 border-gray-300 focus:border-blue-500 p-1.5 w-40 w"
           />
           <select
             value={category}
             onChange={setCategoryInput}
-            className="outline-none border-b-2 border-gray-300 focus:border-blue-500 p-1.5 w-40"
+            className="outline-none border-b-2 border-gray-300 focus:border-blue-500 p-1.5 w-40 "
           >
             <option>Produce</option>
             <option>Dairy</option>
