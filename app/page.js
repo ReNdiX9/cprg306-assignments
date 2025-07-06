@@ -25,6 +25,9 @@ export default function Home() {
       <Link href="/week-7" className={styleLink}>
         Go to week-7
       </Link>
+      <Link href="/week-8" className={styleLink}>
+        Go to week-8
+      </Link>
     </main>
   );
 }
